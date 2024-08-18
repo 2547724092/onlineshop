@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhang.onlineshop">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/title"
+        android:label="宠物商城"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/title"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.search.search_main_itemActivity"></activity>
+        <activity android:name="com.EditActivity" />
+        <activity android:name="com.AddActivity" />
+        <activity android:name="com.liuyanban" />
+        <activity android:name="com.boutique.BangDan" />
+        <activity android:name="com.aboutme.AboutMore" />
+        <activity android:name="com.search.SearchMain" />
+        <activity android:name="com.boutique.Jingpin" />
+        <activity android:name="com.loginhelper.QuickLogin" />
+        <activity android:name="com.aboutme.AboutMe" />
+        <activity android:name="com.loginhelper.enterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shopcar.ShoppingActivity" />
+        <activity android:name="com.vip.VipActivity" />
+        <activity android:name="com.mainpage.Main2Activity" />
+        <activity android:name="com.LoginActivity" />
+        <activity android:name="com.Register" />
+    </application>
+
+</manifest>

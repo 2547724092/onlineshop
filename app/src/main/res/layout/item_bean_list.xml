@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/necklace"
+        android:id="@+id/item_search_iv_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/item_search_tv_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_search_iv_icon"
+        android:text="Title"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/item_search_tv_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@id/item_search_iv_icon"
+        android:layout_below="@id/item_search_tv_title"
+        android:text="content"
+        android:textSize="12sp"
+        android:background="@drawable/text3_border_shape"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/item_search_tv_comments"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="40dp"
+        android:text="Title"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@color/silver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/item_search_tv_baoyou"
+
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/item_search_tv_content"
+        android:layout_below="@id/item_search_tv_title"
+        android:text="包邮"
+        android:textSize="12sp"
+        android:background="@drawable/text4_border_shape"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/search_addcar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/addcar"
+        />
+
+
+
+</RelativeLayout>

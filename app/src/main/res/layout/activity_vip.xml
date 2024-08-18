@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vip.VipActivity"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/plus"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="姓名："
+            android:textColor="#000000"
+            android:textSize="12sp"
+            />
+        <EditText
+            android:id="@+id/et_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:background="@null"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="手机："
+            android:textColor="#000000"
+            android:textSize="12sp"
+            />
+        <EditText
+            android:id="@+id/vip_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:hint="填入11位手机号码"
+            android:textSize="12sp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="兴趣："
+            android:textColor="#000000"
+            android:textSize="12sp"
+            />
+        <EditText
+            android:id="@+id/vip_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/yearvip" />
+
+    <Button
+        android:id="@+id/vip_sub"
+        android:layout_marginTop="390dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="110dp"
+        android:text="立即开通"
+        android:textSize="17sp"
+        android:background="@drawable/vipbutton_circle_shape"
+        android:textColor="@color/black"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="470dp"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/first"
+            />
+
+        <TextView
+            android:id="@+id/txt_backkey"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="首页"
+            android:layout_below="@+id/btn_back"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/seriouschoose"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_marginLeft="55dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_member"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/btn_choose"
+            android:background="@drawable/vip" />
+
+        <TextView
+            android:id="@+id/txt_member"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="会员"
+            android:layout_below="@+id/btn_member"
+            android:layout_toRightOf="@+id/txt_backkey"
+            android:layout_marginLeft="150dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_shopping"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/btn_member"
+            android:background="@drawable/shopcar" />
+
+        <TextView
+            android:id="@+id/txt_shopping"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="购物车"
+            android:layout_below="@+id/btn_member"
+            android:layout_toRightOf="@+id/txt_member"
+            android:layout_marginLeft="52dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_toRightOf="@+id/btn_shopping"
+            android:background="@drawable/my" />
+
+        <TextView
+            android:id="@+id/txt_my"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="我的"
+            android:layout_below="@+id/btn_my"
+            android:layout_toRightOf="@+id/txt_shopping"
+            android:layout_marginLeft="45dp"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

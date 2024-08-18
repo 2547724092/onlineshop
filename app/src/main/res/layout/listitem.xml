@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="95dp"
+        android:layout_height="95dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="45dp"
+        android:layout_height="12dp"
+        android:textStyle="italic"
+        android:text="美吖自营"
+        android:layout_toRightOf="@+id/iv"
+        android:textColor="@color/white"
+        android:background="@drawable/text1_circle_shape"
+        android:textSize="9sp"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="聚划算 "
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/iv"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/iv"
+        android:text="快抢价"
+        android:background="@drawable/text_circle_shape"
+        android:textColor="@color/white"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/txtPrice"
+        android:text="10/kg"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/iv"
+        android:text="地点"
+        android:textColor="@color/slategray"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/paysum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/price"
+        android:text="付款人数"
+        android:textColor="@color/transparent2"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/lingquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv"
+        android:text="领券"
+        android:background="@drawable/text3_border_shape"
+        android:textColor="@color/tomato"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/baoyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/lingquan"
+        android:text="包邮"
+        android:background="@drawable/text4_border_shape"
+        android:textColor="@color/tomato"
+        android:textSize="8sp" />
+    <Button
+        android:id="@+id/btn_addcar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/addcar"
+        />
+
+</RelativeLayout>
+

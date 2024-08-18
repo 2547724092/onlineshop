@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">购物商城</string>
+    <string name="shoppingcar">购物车</string>
+    <string name="todo">TODO</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

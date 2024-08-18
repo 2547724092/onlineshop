@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boutique.Jingpin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#eb4f38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_jingpin"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_edittext_shape"
+                android:textSize="16sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="请输入关键字"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/iv_delete_bg"
+                android:id="@+id/jingpin_delete"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/jingpin_btn_back"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_search_bg"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text="返回"
+            android:textColor="@color/color_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:background="@color/orangered"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="双12狂欢  正在疯抢"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="100dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <Button
+            android:id="@+id/btn__bangdan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:background="@drawable/bangdan"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_baokuan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:background="@drawable/baokuan"
+            android:layout_marginLeft="40dp"
+            />
+        <Button
+            android:id="@+id/btn_cainiao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:background="@drawable/cainiao"
+            android:layout_marginLeft="43dp"
+            />
+        <Button
+            android:id="@+id/btn_elm"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:padding="10dp"
+            android:background="@drawable/elm"
+            android:layout_marginLeft="40dp"
+            />
+        <Button
+            android:id="@+id/btn_health"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:background="@drawable/health"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/txt__bangdan"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:text="宠物榜单"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_baokuan"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:text="爆款特卖"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_cainiao"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:text="狗狗日用"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:id="@+id/txt_elm"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="狗狗保健"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:id="@+id/txt_health"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="狗狗零食"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

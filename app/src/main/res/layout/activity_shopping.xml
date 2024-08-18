@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shopcar.ShoppingActivity">
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#A9E24146"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="购物车"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:background="@color/ghostwhite"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:childIndicator="@null"
+        android:groupIndicator="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/all_chekbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:gravity="center"
+                android:minHeight="64dp"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="合计:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:textColor="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FAFAFA" />
+
+        <TextView
+            android:id="@+id/tv_go_to_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E24146"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="去结算(0)"
+            android:textColor="#FAFAFA" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btn_firstpage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/first"
+            />
+
+        <TextView
+            android:id="@+id/txt_backkey"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="首页"
+            android:layout_below="@+id/btn_firstpage"
+            android:textSize="10sp"
+            />
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/seriouschoose"
+            android:layout_toRightOf="@+id/btn_firstpage"
+            android:layout_marginLeft="55dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_member"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/btn_choose"
+            android:background="@drawable/vip" />
+
+        <TextView
+            android:id="@+id/txt_member"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="会员"
+            android:layout_below="@+id/btn_member"
+            android:layout_toRightOf="@+id/txt_backkey"
+            android:layout_marginLeft="150dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_shopping"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/btn_member"
+            android:background="@drawable/shopcar" />
+
+        <TextView
+            android:id="@+id/txt_shopping"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="购物车"
+            android:layout_below="@+id/btn_member"
+            android:layout_toRightOf="@+id/txt_member"
+            android:layout_marginLeft="52dp"
+            android:textSize="10sp"
+            />
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_toRightOf="@+id/btn_shopping"
+            android:background="@drawable/my" />
+
+        <TextView
+            android:id="@+id/txt_my"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="我的"
+            android:layout_below="@+id/btn_my"
+            android:layout_toRightOf="@+id/txt_shopping"
+            android:layout_marginLeft="45dp"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
